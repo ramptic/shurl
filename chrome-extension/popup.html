@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Shurl</title>
+    <!-- Move styles to popup.css -->
+    <style>
+      body {
+        font-family:sans-serif;
+        width: 600px;
+      }
+      form input[type=text],form textarea {
+        width: 100%;
+      }
+      form fieldset {
+        border: none;
+      }
+      form button {
+        float: right;
+        margin: 15px;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <label for="url" accesskey="r">U<u>r</u>l:</label>
+        <input type="text" id="url" name="url" required placeholder="Enter URL" />
+      </fieldset>
+
+      <fieldset>
+        <label for="title" accesskey="i">T<u>i</u>tle:</label>
+        <input type="text" id="title" name="title" required placeholder="Enter title" />
+      </fieldset>
+
+      <fieldset>
+        <label for="notes" accesskey="o">N<u>o</u>tes:</label>
+        <br>
+        <textarea id="notes" name="notes">
+        </textarea>
+      </fieldset>
+
+      <fieldset>
+        <label for="tags" accesskey="a">T<u>a</u>gs:</label>
+        <input type="text" id="tags" name="tags" placeholder="Enter,tags,here" />
+      </fieldset>
+
+      <fieldset>
+        <input type="checkbox" id="private" name="private" accesskey="p">Mark as private
+      </fieldset>
+
+      <button type="submit" value="add">Add</button>
+    </form>
+  </body>
+</html>

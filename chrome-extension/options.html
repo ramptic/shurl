@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Shurl options</title>
+    <!-- TODO: Refactor styles -->
+    <style>
+      body {
+        font-family:sans-serif;
+        width: 600px;
+      }
+      form input[type=text],form textarea {
+        width: 100%;
+      }
+      form fieldset {
+        border: none;
+      }
+      form button {
+        float: right;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <input type="checkbox" id="incognitoDefault" name="incognitoDefault">Default to private bookmarking when surfing incognito.
+    </fieldset>
+
+    <button name="save" id="save" value="save">Save</button>
+    <script src="options.js"></script>
+  </body>
+</html>

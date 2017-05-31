@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Shurl - Login</title>
+    <!-- Move styles to popup.css -->
+    <style>
+      body {
+        font-family:sans-serif;
+        width: 600px;
+      }
+      form input[type=text],input[type=password] {
+        width: 100%;
+      }
+      form fieldset {
+        border: none;
+      }
+      form button {
+        float: right;
+        margin: 15px;
+      }
+    </style>
+    <!-- <script src="login.js"></script> -->
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <label for="email" accesskey="e">E-mail address</label>
+        <input type="text" id="email" name="email" required placeholder="Enter your e-mail address" />
+      </fieldset>
+
+      <fieldset>
+        <label for="password" accesskey="p">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password" />
+      </fieldset>
+
+      <button type="submit" value="login">Login</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Shurl Chrome Extension",
+  "description": "This extension allows you to share internet addresses (URLs).",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Shurl!"
+  },
+
+  "icons": {
+    "16": "icon-16px.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "https://ajax.googleapis.com/"
+  ]
+}
